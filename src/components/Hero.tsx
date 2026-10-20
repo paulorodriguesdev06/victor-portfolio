@@ -12,7 +12,7 @@ export function Navbar() {
     <header className="fixed top-0 inset-x-0 z-50 backdrop-blur-xl bg-background/60 border-b border-border/40">
       <nav className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <a href="#top" className="font-display font-bold tracking-tight text-lg">
-          Paulo Victor<span className="text-gradient">DEV</span>
+          Paulo Victor<span className="text-gradient"> Developer</span>
         </a>
         <ul className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
           {links.map((l) => (
