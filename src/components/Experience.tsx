@@ -8,29 +8,21 @@ type Job = {
 
 const jobs: Job[] = [
   {
-    role: "Full Stack Developer",
-    company: "Empresa Atual",
-    period: "2024 — Presente",
+    role: "Web Designer",
+    company: "Laboratório Contraprova",
+    period: "julho de 2026 — Presente",
     description:
-      "Liderança técnica em features de alto impacto. Arquitetura de módulos Next.js + Node.js, code review e mentoria de devs juniores.",
+      " Atuo como desenvolvedor responsável pela modernização e reescrita do sistema da empresa, participando da concepção, arquitetura, design e desenvolvimento da nova versão da aplicação, utilizando React com Next.js no Front-end e Node.js com Fastify no Back-end.. Arquitetura de módulos Next.js + Node.js, code review e manutenção do sistema.",
     stack: ["Next.js", "Node.js", "PostgreSQL", "AWS"],
   },
   {
-    role: "Desenvolvedor Front-end Pleno",
-    company: "Startup B",
-    period: "2022 — 2024",
+    role: "Estágio em Desenvolvimento de Sistemas",
+    company: "Laboratório Contraprova",
+    period: "junho de 2025 —  julho de 2026",
     description:
-      "Construção do design system interno e refatoração da plataforma web. Redução de 40% no tempo de carregamento inicial.",
+      "Atuação como Estagiário em Desenvolvimento de Sistemas, participando do desenvolvimento, manutenção e aprimoramento de aplicações e soluções internas.",
     stack: ["React", "TypeScript", "Tailwind", "Storybook"],
-  },
-  {
-    role: "Desenvolvedor Júnior",
-    company: "Agência C",
-    period: "2021 — 2022",
-    description:
-      "Desenvolvimento de sites institucionais e e-commerces. Primeiro contato profissional com Node.js e bancos relacionais.",
-    stack: ["JavaScript", "Node.js", "MySQL"],
-  },
+  }
 ];
 
 export function Experience() {
