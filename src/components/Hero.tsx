@@ -65,10 +65,10 @@ export function Hero() {
           </a>
           <div className="flex items-center gap-2 ml-2">
             <a href="https://github.com" target="_blank" rel="noreferrer" className="size-10 rounded-full border border-border bg-surface/40 grid place-items-center hover:bg-surface transition" aria-label="GitHub">
-              {/* <Github className="size-4" /> */} Github
+              <img src={'/github.png'} />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="size-10 rounded-full border border-border bg-surface/40 grid place-items-center hover:bg-surface transition" aria-label="LinkedIn">
-              {/* <Linkedin className="size-4" /> */} Linkedin 
+            <a href="https://www.linkedin.com/in/paulo-victor-souza-rodrigues/" target="_blank" rel="noreferrer" className="size-10 rounded-full border border-border bg-surface/40 grid place-items-center hover:bg-surface transition" aria-label="LinkedIn">
+              <img src={'/linkedin.png'} /> 
             </a>
           </div>
         </div>

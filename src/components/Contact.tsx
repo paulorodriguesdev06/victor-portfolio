@@ -21,10 +21,10 @@ export function Contact() {
 
         <div className="mt-12 flex items-center justify-center gap-3">
           <a href="https://github.com" target="_blank" rel="noreferrer" className="size-12 rounded-full border border-border bg-surface grid place-items-center hover:bg-surface-elevated transition" aria-label="GitHub">
-            {/* <Github className="size-5" /> */} Github
+            <img src={'/github.png'} />
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="size-12 rounded-full border border-border bg-surface grid place-items-center hover:bg-surface-elevated transition" aria-label="LinkedIn">
-            {/* <Linkedin className="size-5" /> */} Linkedin
+          <a href="https://www.linkedin.com/in/paulo-victor-souza-rodrigues/" target="_blank" rel="noreferrer" className="size-12 rounded-full border border-border bg-surface grid place-items-center hover:bg-surface-elevated transition" aria-label="LinkedIn">
+            <img src={'/linkedin.png'} />
           </a>
         </div>
 

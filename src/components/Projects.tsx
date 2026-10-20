@@ -106,7 +106,8 @@ export function Projects() {
                   )}
                   {p.repo && (
                     <a href={p.repo} className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-foreground">
-                       Repositório Github {/* <Github className="size-4" /> */}
+                       Repositório Github
+                       <img src={'/github.png'} className="text-white"/>
                     </a>
                   )}
                 </div>
