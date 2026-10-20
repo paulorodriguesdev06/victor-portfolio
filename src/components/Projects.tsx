@@ -5,6 +5,7 @@ type Project = {
   tagline: string;
   description: string;
   image: string;
+  fullImage?: boolean;
   stack: string[];
   live?: string;
   repo?: string;
@@ -24,13 +25,14 @@ const projects: Project[] = [
     year: "2025",
   },
   {
-    title: "E-commerce Headless",
-    tagline: "Loja virtual modular e performática",
+    title: "Clarify - Sistema de Gestão de Finanças",
+    tagline: "Dashboard analítico para gestão financeira",
     description:
-      "Storefront construído com Next.js consumindo API headless em Node. Checkout integrado, busca facetada e painel administrativo customizado.",
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
-    stack: ["Next.js", "Stripe", "Node.js", "Redis", "Tailwind"],
-    live: "#",
+      "Aplicação web completa para gestão de operações financeiras com gráficos dinâmicos, API REST escalável. Foco em performance e DX.",
+    image: "/clarify-mockup.png",
+    fullImage: true,
+    stack: ["Next.js", "TypeScript", "Node.js", "PostgreSQL", "Prisma"],
+    live: "https://finances-dashboard-front.vercel.app/login",
     repo: "#",
     year: "2024",
   },
@@ -68,12 +70,16 @@ export function Projects() {
             >
               <div className="lg:col-span-7">
                 <div className="relative group rounded-3xl overflow-hidden border border-border shadow-card">
-                  <div className="absolute inset-0 bg-gradient-to-tr from-primary/30 via-transparent to-accent/20 mix-blend-overlay opacity-60 group-hover:opacity-90 transition-opacity z-10" />
+                  {!p.fullImage && (
+                    <div className="absolute inset-0 bg-gradient-to-tr from-primary/30 via-transparent to-accent/20 mix-blend-overlay opacity-60 group-hover:opacity-90 transition-opacity z-10" />
+                  )}
                   <img
                     src={p.image}
                     alt={p.title}
                     loading="lazy"
-                    className="w-full h-[340px] md:h-[440px] object-cover group-hover:scale-105 transition-transform duration-700"
+                    className={p.fullImage
+                      ? "block w-full h-auto"
+                      : "w-full h-[340px] md:h-[440px] object-cover group-hover:scale-105 transition-transform duration-700"}
                   />
                 </div>
               </div>
@@ -94,7 +100,7 @@ export function Projects() {
                 </ul>
                 <div className="mt-6 flex items-center gap-3">
                   {p.live && (
-                    <a href={p.live} className="inline-flex items-center gap-2 text-sm font-medium text-primary-glow hover:opacity-80">
+                    <a href={p.live} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm font-medium text-primary-glow hover:opacity-80">
                       Ver demo <ExternalLink className="size-4" />
                     </a>
                   )}
