@@ -4,8 +4,8 @@ import {
 
 const skills = [
   { icon: Atom, name: "Frontend", level: "Avançado", items: ["React", "Next.js", "TanStack", "Tailwind"] },
-  { icon: Server, name: "Backend", level: "Avançado", items: ["Node.js", "Express", "NestJS", "APIs REST"] },
-  { icon: Layers, name: "Linguagens", level: "Avançado", items: ["TypeScript", "JavaScript", "PHP"] },
+  { icon: Server, name: "Backend", level: "Avançado", items: ["Node.js", "Express", "Fastify", "Redis", "APIs REST"] },
+  { icon: Layers, name: "Linguagens", level: "Avançado", items: ["TypeScript", "JavaScript", "Java", "PHP"] },
   { icon: Database, name: "Bancos de dados", level: "Sólido", items: ["PostgreSQL", "MySQL"] },
   { icon: Cloud, name: "Cloud & DevOps", level: "Intermediário", items: ["AWS", "Vercel", "CI/CD"] },
   { icon: GitBranch, name: "Versionamento", level: "Avançado", items: ["Git", "GitHub", "GitFlow", "Code Review"] },
